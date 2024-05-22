@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: funda-scraper-service
+spec:
+  template:
+    spec:
+      containers:
+      - image: europe-west4-docker.pkg.dev/funda-424117/prod/fundascraper
