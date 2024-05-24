@@ -1,2 +1,8 @@
 fastapi
 uvicorn
+python-telegram-bot
+python-dotenv
+bs4
+requests
+scrapy
+scrapy-random-useragent
