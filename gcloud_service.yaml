@@ -7,3 +7,12 @@ spec:
     spec:
       containers:
       - image: europe-west4-docker.pkg.dev/funda-424117/prod/fundascraper
+        ports:
+        - name: http1
+          containerPort: 8000
+        env:
+        - name: TELEGRAM_TOKEN
+          valueFrom:
+            secretKeyRef:
+              key: latest
+              name: TELEGRAM_TOKEN
